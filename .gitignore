@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+.pytest_cache/
+
+# Generated datasets (retain folder structure if needed)
+data/raw/*.csv
+data/processed/*.csv
+
+# Trained models (generated locally)
+*.pkl
+*.joblib

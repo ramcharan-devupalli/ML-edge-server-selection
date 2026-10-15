@@ -1,0 +1,19 @@
+from fastapi import FastAPI
+import sys
+
+app = FastAPI()
+
+server_name = sys.argv[1] if len(sys.argv) > 1 else "Edge
+@app.get("/")
+def home():
+    return {
+        "server": server_name,
+        "status": "running"
+    }
+
+@app.get("/status")
+def status():
+    return {
+        "server": server_name,
+        "status": "available"
+    }
