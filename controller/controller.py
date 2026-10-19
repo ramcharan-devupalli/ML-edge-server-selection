@@ -16,7 +16,7 @@ def select_edge_server():
 
     for name, url in SERVERS.items():
 
-        features = collect_features(url)
+        features = collect_features(name, url)
 
         prediction = predict_response_time(features)
 

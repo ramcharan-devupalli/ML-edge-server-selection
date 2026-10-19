@@ -9,7 +9,10 @@ features = [
     "throughput",
     "cpu_usage",
     "memory_usage",
-    "active_requests"
+    "active_requests",
+    "recent_avg_response_time",
+    "response_time_trend",
+    "recent_failure_count"
 ]
 
 target = "response_time"
